@@ -10,8 +10,11 @@ import Chatbot from './components/Chatbot'
 import Footer from './components/Footer'
 
 function App() {
+  // Use basename only in production (GitHub Pages)
+  const basename = import.meta.env.PROD ? '/PersonalWebsite' : ''
+  
   return (
-    <Router basename="/PersonalWebsite">
+    <Router basename={basename}>
       <div className="min-h-screen bg-gray-50">
         <Navbar />
         <main>
