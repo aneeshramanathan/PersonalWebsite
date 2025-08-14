@@ -11,7 +11,7 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <Router>
+    <Router basename="/PersonalWebsite">
       <div className="min-h-screen bg-gray-50">
         <Navbar />
         <main>
