@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react'
 import { motion } from 'framer-motion'
 
@@ -20,18 +21,18 @@ const Home = () => {
               Computer Science student at San Jose State University and experienced Software Engineer Intern specializing in AI/ML, full-stack development, and data analysis.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <a
-                href="/projects"
+              <Link
+                to="/projects"
                 className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200"
               >
                 View My Work
-              </a>
-              <a
-                href="/contact"
+              </Link>
+              <Link
+                to="/contact"
                 className="bg-gray-200 hover:bg-gray-300 text-gray-800 px-8 py-3 rounded-lg font-medium transition-colors duration-200"
               >
                 Get In Touch
-              </a>
+              </Link>
             </div>
             <div className="flex justify-center space-x-6">
               <a href="https://github.com/aneeshramanathan" className="text-gray-600 hover:text-primary-600 transition-colors">
@@ -77,12 +78,12 @@ const Home = () => {
                 automated testing frameworks, and predictive analytics solutions. I'm passionate about leveraging technology 
                 to solve complex problems and create meaningful impact.
               </p>
-              <a
-                href="/about"
+              <Link
+                to="/about"
                 className="bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 inline-block"
               >
                 Learn More About Me
-              </a>
+              </Link>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 20 }}
@@ -144,23 +145,23 @@ const Home = () => {
                   <p className="text-gray-600 mb-4">
                     A brief description of this amazing project and the technologies used to build it.
                   </p>
-                  <a
-                    href="/projects"
+                  <Link
+                    to="/projects"
                     className="text-primary-600 hover:text-primary-700 font-medium"
                   >
                     Learn More →
-                  </a>
+                  </Link>
                 </div>
               </motion.div>
             ))}
           </div>
           <div className="text-center mt-12">
-            <a
-              href="/projects"
+            <Link
+              to="/projects"
               className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200 inline-block"
             >
               View All Projects
-            </a>
+            </Link>
           </div>
         </div>
       </section>

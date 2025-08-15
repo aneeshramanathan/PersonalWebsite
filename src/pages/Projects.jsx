@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { ExternalLink, Github, Code, Smartphone, Globe, Database } from 'lucide-react'
 
@@ -194,18 +195,18 @@ const Projects = () => {
               Let's discuss your next project!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/contact"
+              <Link
+                to="/contact"
                 className="bg-white text-primary-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-medium transition-colors duration-200 inline-block"
               >
                 Get In Touch
-              </a>
-              <a
-                href="/resume"
+              </Link>
+              <Link
+                to="/resume"
                 className="border-2 border-white text-white hover:bg-white hover:text-primary-600 px-8 py-3 rounded-lg font-medium transition-colors duration-200 inline-block"
               >
                 View Resume
-              </a>
+              </Link>
             </div>
           </motion.div>
         </div>
